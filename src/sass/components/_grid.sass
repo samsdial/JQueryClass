@@ -1,0 +1,13 @@
+
+=clearfix()
+  &:before,
+  &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+.cover-container
+  max-width: 42em
+  .row
+    min-height: 100vh - 25
