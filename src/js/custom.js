@@ -1,26 +1,18 @@
 // Funcion anomima
-( function () {
-    var $dds = $('dd');
-    $dds.hide();
-    $dds.eq(0).show();
-    console.log();
-    $('dt').children().html("keyboard_arrow_down");
-    //keyboard_arrow_up
-    $('dt').on('mouseenter', function (e) {
-        e.preventDefault();
+(function () {
+    var contador = 0;
 
-        $dds.slideUp(500, function () {
-            $(this)
-                .addClass('cl--white')
-                .removeClass('bg-primary')
-                .addClass('bgc--silver');
-            $('dt').children().html("keyboard_arrow_down");
-        });
-        $(this)
-            .next()
-            .slideDown(100, function () {
-                $(this).addClass('bg-primary');
-                $('dt').children().html("keyboard_arrow_up");
-            });
+    $("body").on('click', 'h3', function () {
+        /*console.log("mensaje    ")*/
+        /*$("body").append(h3Dinamico);*/
+        contador ++;
+        var h3Dinamico = "<h3 class='js-"+ contador +"'>Dinamico.."+ contador +"</h3>";
+        $(".title").append(h3Dinamico);
+        if( contador === 3){
+            $(".js-3").bind("click", function () {
+                console.log("Funcion dinamica")
+            })
+        }
+
     })
 })();

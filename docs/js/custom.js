@@ -1,2 +1,2 @@
-"use strict";!function(){var d=$("dd");d.hide(),d.eq(0).show(),console.log(),$("dt").children().html("keyboard_arrow_down"),$("dt").on("mouseenter",function(e){e.preventDefault(),d.slideUp(500,function(){$(this).addClass("cl--white").removeClass("bg-primary").addClass("bgc--silver"),$("dt").children().html("keyboard_arrow_down")}),$(this).next().slideDown(100,function(){$(this).addClass("bg-primary"),$("dt").children().html("keyboard_arrow_up")})})}();
+"use strict";!function(){var n=0;$("body").on("click","h3",function(){var c="<h3 class='js-"+ ++n+"'>Dinamico.."+n+"</h3>";$(".title").append(c),3===n&&$(".js-3").bind("click",function(){console.log("Funcion dinamica")})})}();
 //# sourceMappingURL=custom.js.map
