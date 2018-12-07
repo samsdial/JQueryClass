@@ -1,76 +1,28 @@
 $(document).ready(function($){
-    $('#submit').click(function(){
-        var name        = $("#name").val();
-        var lastName    = $("#lastName").val();
-        var email       = $("#email").val();
-        var validacion_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
-        var phone       = $("#phone").val();
-        var city       = $("#city").val();
+   // manejo de las img
+   $("img")
+       .attr("src","https://picsum.photos/300/300/?image=115") // Cambia el src
+       .removeClass("rounded-circle")   // remover Clase
+       .addClass("img-thumbnail");  // Agregar clase
+    // Modificaciones al segundo bloque
+    $(".col-js")
+        .children()
+        .find("p")
+        .html("<u>HOLA</u> MUNDO");
 
-        if(name == "" || lastName == "" || email == "" || phone == "" || city == ""){
-            if(name == ""){
-                $(".name + .error").addClass("i");
-                $("#name").focus();
-                return false;
-            }else{
-                $(".name + .error").removeClass("i");
-            }
-            if(lastName == ""){
-                $(".lastname + .error").addClass("i");
-                $("#lastName").focus();
-                return false;
-            }else{
-                $(".lastname + .error").removeClass("i");
-            }
-            if(email == "" || !validacion_email.test(email)){
-                $(".email + .error").addClass("i");
-                $("#email").focus();
-                return false;
-            }else{
-                $(".email + .error").removeClass("i");
-            }
-            if(phone == ""){
-                $(".cel + .error").addClass("i");
-                $("#phone").focus();
-                return false;
-            }else{
-                $(".cel + .error").removeClass("i");
-            }
-            if(city == ""){
-                $(".city + .error").addClass("i");
-                $("#city").focus();
-                return false;
-            }else{
-                $(".city + .error").removeClass("i");
-            }
-        }else{
-            $(".city + .error").removeClass("i");
-            var datos = '&name=' + name +
-                '&lastName=' + lastName +
-                '&email=' + email +
-                '&phone=' + phone +
-                '&city=' + city;
-            $.ajax({
-                method:"Post",
-                url:"contact.php",
-                dataType:"json",
-                data:datos,
-            }).done(function( msg ){
-                if(msg.success){
-                    $('.alerta p').fadeIn("slow");
-                    $('.alerta p').html('Muchas Gracias por contáctarnos, pronto nos estaremos comunicando contigo.');
-                    $('#name').val("");
-                    $('#lastNamee').val("");
-                    $('#email').val("");
-                    $('#phone').val("");
-                    $('#city').val("");
-                }else{
-                    $('.alerta p').fadeIn("slow");
-                    $('.alerta p').html('Error, intente más tarde por favor.');
-                }
-            });
-            return false;
-        }
-    });
+    // referecia
+    $("ul li")
+        .eq(0)
+        .css("color", "red").end()
+        .eq(1)
+        .css("color", "green")
+        .addClass("txt_upper").end()
+        .eq(2)
+        .css("color", "blue")
+        .addClass("txt_bold").end()
+        .eq(3)
+        .css("color", "gray")
+        .addClass("txt_underline").end();
+   // console.log($(".col-js").children());
 });
 
