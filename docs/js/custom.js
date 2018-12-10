@@ -1,2 +1,2 @@
-"use strict";var carro={encedido:!1,llantas:4,puertas:5,fabricante:{creador:"toyora",telefono:"555-5555",direction:"xyz Avenida 123"},colores:["azul","Blanco","Rojo","Negro"],arrancar:function(){carro.encedido?console.log("El veiculo estaba encedido"):(console.log("Encendiendo el motor"),this.encedido=!0)},apagar:function(){!1===carro.encedido?console.log("El veiculo ya estaba Apagado"):(console.log("Apagando el motor"),this.encedido=!1)}};$(".js_encender").on("click",function(){carro.arrancar()}),$(".js_apagar").on("click",function(){carro.apagar()});
+"use strict";$("img").on("mouseenter",function(){console.log($(this).data("color")),console.log($(this).attr("alt"))});
 //# sourceMappingURL=custom.js.map
