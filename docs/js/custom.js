@@ -1,2 +1,2 @@
-"use strict";!function(){function e(e){switch(a.clearQueue(),e){case"top":a.animate({top:"-=50px"},200);break;case"down":a.animate({top:"+=50px"},200);break;case"izq":a.animate({left:"-=50px"},200);break;case"der":a.animate({left:"+=50px"},200);break;default:a.animate({top:"0",left:"0"},1e3)}}var a=$(".cajaRoja");$(document).on("keypress",function(a){switch(a.keyCode){case 119:e("top");break;case 115:e("down");break;case 97:e("izq");break;case 100:e("der");break;default:e("reset")}}),$("button").on("click",function(){e($(this).data("dir"))})}();
+"use strict";!function(){var i=$(".cajaRoja");$("#btnSize").on("click",function(){i.animate({width:"+=100px",height:"+=100px"},1e3,function(){})})}();
 //# sourceMappingURL=custom.js.map
