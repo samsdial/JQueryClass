@@ -1,2 +1,2 @@
-"use strict";$("img").on("mouseenter",function(){console.log($(this).data("color")),console.log($(this).attr("alt"))});
+"use strict";!function(){var t={colores:["blanca","gris","negra","rojo","rosa","verde"],init:function(r){$.extend(t,r);for(var a=0;a<t.colores.length;a++){var e=t.colores[a];$("<img>",{alt:e,"data-color":e,src:"images/camiseta/thumbs/"+e+".jpg"}).appendTo("#cmbColor")}$("#cmbColor img").hover(function(){var t=$(this)[0].getAttribute("alt"),r="images/camiseta/large/"+t+".jpg";$("#imgChange").attr("src",r),$("#lblColor").text(t).removeAttr("class").attr("class","txt_upper ml-2 cl--"+t)})}};t.init()}();
 //# sourceMappingURL=custom.js.map
