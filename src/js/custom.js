@@ -1,23 +1,36 @@
 // Funcion anomima
-(function () {
- var contador = 0; // Va acontar cada vez Click desde 0
-     $("button").on("click", function () {
-         contador ++; // Sumar
-         var base = $('.js-cmbBase').val();
-         var linea = ""; // Crear una linea
-         // Concatenar para crear el tr de la tabla
-         linea += '<tr>';
-         linea +=       '<td>'+base+'</td>';
-         linea +=       '<td>x</td>';
-         linea +=       '<td>'+ contador +'</td>'; // muestra el contador
-         linea +=       '<td>=</td>';
-         linea +=       '<td>'+( contador * base )+'</td>';
-         linea += '</tr>';
-         $("table").append( linea );
-     });
-     // Funcion que detecta el cambio de la base
-    $(".js-cmbBase").on('change', function () {
-       $("tr").not(":eq(0)").remove();
-       contador = 0;
-    });
-})();
+var carro = {
+    encedido: false,
+    llantas:4,
+    puertas:5,
+    fabricante:{
+        creador:"toyora",
+        telefono: "555-5555",
+        direction: "xyz Avenida 123"
+    },
+    colores:["azul", "Blanco", "Rojo", "Negro"],
+    arrancar: function () {
+        if(carro.encedido){
+            console.log("El veiculo estaba encedido");
+        }else {
+            console.log("Encendiendo el motor");
+            this.encedido = true;
+        }
+    },
+    apagar: function () {
+        if( carro.encedido === false){
+            console.log("El veiculo ya estaba Apagado");
+        }else {
+            console.log("Apagando el motor");
+            this.encedido = false;
+        }
+    }
+};
+//carro.arrancar();
+//carro.apagar();
+$(".js_encender").on("click", function () {
+    carro.arrancar();
+});
+$(".js_apagar").on("click", function () {
+    carro.apagar();
+});
