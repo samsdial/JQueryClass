@@ -1,1 +1,1 @@
-{"version":3,"sources":["custom.js"],"names":["$","on","console","log","this","data","attr"],"mappings":"aAAAA,EAAA,OAAAC,GAAA,aAAA,WACCC,QAAYC,IAAAH,EAAAI,MAAAC,KAAA,UACRH,QAAFC,IAAYH,EAAAI,MAAAE,KAAc","file":"custom.js","sourcesContent":["//\r\n(function () {\r\n   $(\"img\").on(\"mouseenter\", function () {\r\n      console.log($(this).data(\"color\"));\r\n      console.log($(this).attr(\"alt\"));\r\n   });\r\n})();"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"custom.js","sourcesContent":[]}
