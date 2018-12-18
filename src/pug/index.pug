@@ -18,7 +18,13 @@ block content
                 img(src="images/itemB.jpg")
             li
                 img(src="images/itemC.jpg")
-    section.container.cover-container
+    section.container.cover-container.hidden
         button.btn.btn_site.js-btn(data-mov="ant") Anterior
         button.btn.btn_site.js-btn(data-mov="sig") Siguente
         // Content-area/
+    section.container.cover-container
+       .slideShowButtons
+           .slideButton(data-idx="0")
+           .slideButton(data-idx="1")
+           .slideButton(data-idx="2")
+           .slideButton(data-idx="3")
