@@ -1,4 +1,5 @@
-﻿# Sams WorkFlow 2018 -- Boostrap 0.4
+﻿#JqueryClass Advance
+# Sams WorkFlow 2018 -- Boostrap 0.4
 
 Gulp wordFlow 2018
 
