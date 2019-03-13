@@ -1,33 +1,36 @@
-﻿#JqueryClass Advance
-# Sams WorkFlow 2018 -- Boostrap 0.4
+﻿#JS Advance
+JS ADVANCE
+===================
+https://github.com/jonmircha/edjs-paradigmas2017
 
-Gulp wordFlow 2018
+Introducción
+-------------
 
-* [Gulp] - Automatizador de tareas
-br
-* [Sass] - Extención minificación de css como preprocesador
-br
-* [sourcemaps] - Maping como herramienta de rastreo luego de la compilación tanto de las hojas de estilo css, al igual que todos los archivos javascript.
-br
-* [Autoprefixer] - Esencial en la compilación de los estilos para el soporte de los prefijos de todos los navegadores.
-br
-* [imagemin] - Minificador de imagenes
-br
-* [uglify] -
-br
-* [babel] -
-br
-* [pug] -
-br
-* [BrowserSync] -
+#### Paradigmas de la Programación
+
+Entendiendo la programación, la gente cree que la programacióne es dificil:
+Algunas razones:
+
+- Malos Profesores
+- Programadores SOBERBIOS
+- A los seres HUMANOS no les gusta PENSAR y ANALIZAR
+
+La programacion es:
+Intuitiva e inherente
+
+Pensar como humanos y no como maquinas
+Flujo, como ejecutar los procesos
+
+#### Diagramas de Flujo
+Algoritmo es una serie de  pasos ordenados y finitos para resolver una tarea
+Diagrama de flujo
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
 
 
-*** Install
-```shell
-$ npm install
-```
 
-*** Running
-```shell
-$ gulp watch
-```
+
+#### <i class="icon-file"></i> Create a document
