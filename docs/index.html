@@ -52,11 +52,22 @@
     <section class="container cover-container">
       <!-- content-area-->
       <div class="row align-items-center">
-        <div class="col mx-auto txt_center">
-          <div class="title mb-5 txt_upper">
-            <h1>Tema Extra:</h1><br><small><strong>Data Attribute</strong></small>
+        <div class="col mx-auto"><a href="javascript:genScreenshot()">download</a><a id="test"></a></div>
+        <div class="col mx-auto">
+          <div class="card" id="box1">
+            <div class="additional">
+              <div class="imag"><img src="" height="200"><br>
+                <input type="file" onchange="previewFile()">
+              </div>
+              <div class="user-card">
+                <div class="level"></div>
+              </div>
+            </div>
+            <div class="general">
+              <div class="h2">Jade Doe</div>
+              <div class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias doloremque dolorum ea neque rem sint tempora tempore voluptatem. Accusantium alias enim iure iusto laboriosam, numquam quidem rem temporibus veniam.</div><span class="more"></span>
+            </div>
           </div>
-          <div class="acction"></div>
         </div>
       </div>
       <!-- Content-area/-->
@@ -68,6 +79,7 @@
         <p>New to Bootstrap?<a href="../../">Visit the homepage</a> or read our</p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")-->

@@ -1,0 +1,31 @@
+.card
+  width: 450px
+  height: 250px
+  background-color: $white
+  box-shadow: 0 8px 16px -8px rgba($black, .4)
+  border-radius: 6px
+  overflow: hidden
+  position: relative
+  margin: 1.5rem
+  display: inline-block
+  .additional
+    position: absolute
+    right: 0
+    width: 150px
+    height: 100%
+    background: red
+    transition: width 0.4s
+    overflow: hidden
+    z-index: 2
+  .general
+    width: 300px
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 1rem
+    padding-top: 0

@@ -4,14 +4,22 @@ block content
     section.container.cover-container
         // content-area
         .row.align-items-center
-            .col.mx-auto.txt_center
-                .title.mb-5.txt_upper
-                    h1 Tema Extra:
-                    br
-                    small
-                        strong Data Attribute
-                .acction
-
+            .col.mx-auto
+                a(href="javascript:genScreenshot()") download
+                a#test
+            .col.mx-auto
+                #box1.card
+                    .additional
+                        .imag
+                            img(src="", height="200")
+                            br
+                            input(type="file", onchange="previewFile()")
+                        .user-card
+                            .level
+                    .general
+                        .h2 Jade Doe
+                        .h5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias doloremque dolorum ea neque rem sint tempora tempore voluptatem. Accusantium alias enim iure iusto laboriosam, numquam quidem rem temporibus veniam.
+                        span.more
 
 
 
